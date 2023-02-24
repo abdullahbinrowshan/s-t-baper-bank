@@ -56,7 +56,7 @@ function withdraw() {
         return;
     } else {
         const totalWithdraw = getFloatText('current-withdraw') + withdrawAmount;
-        let totalBalance = getFloatText('current-balance');
+        let totalBalance = getFloatText('current-balance') - withdrawAmount;
         if (totalWithdraw > totalBalance) {
             alert("BABA you won't get any more money than your monthly pocket expenses. Please see you next month");
             return
