@@ -8,36 +8,36 @@
     <title>BAAP ER BANK</title>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
     <header>
         <h1 class="text-center text-5xl mt-6">Welcome to your
-            <span class="font-semibold text-violet-600">BAPER BANK</span>!!!</h1>
+            <span class="font-semibold text-violet-600">BAPER BANK</span>!!!
+        </h1>
     </header>
     <main>
         <section class="bg-blue-100 w-9/12 mx-auto mt-20 p-8">
             <h3 class="text-3xl">Please Login</h3>
             <div class="space-y-6 mt-6">
-                <input type="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " name="" id="email" placeholder="Your Email">
-                <input type="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " name="" id="password" placeholder="Your Password">
-                <button type="button" id="form-submit" class="text-white bg-purple-400 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300
+                <input type="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    name="" id="email" placeholder="Your Email">
+                <input type="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                    name="" id="password" placeholder="Your Password">
+                <button type="button" onclick="formSubmit()" class="text-white bg-purple-400 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300
                 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple</button>
             </div>
         </section>
     </main>
     <script src="script.js"></script>
+    <script>
+        alert(`
+            Email: ${requiredEmail}
+            Password: ${requiredPass}
+        `)
+    </script>
 </body>
 
 </html>
