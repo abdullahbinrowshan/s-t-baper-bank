@@ -1,4 +1,4 @@
-const requiredEmail = "ami@dam.cele";
+const requiredEmail = "ami@dam.sontan";
 const requiredPass = "adamAmarBABA";
 
 function getValue(elementID) {
