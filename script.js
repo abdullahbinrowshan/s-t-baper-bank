@@ -13,7 +13,7 @@ function formSubmit() {
         console.log(email, password);
     } else {
         console.log(email, password);
-        alert('tui lawarish naki? 🤨')
+        alert('your input is invalid? 🤨')
     }
 };
 
